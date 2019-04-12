@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello World</title>
+    <title>First JS</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- <h1>Hello World</h1> -->
+    <script>
+        console.log('Hello World');
+        var number = 10; //Declarcion de variables
+        // console.log(number); 
+
+        /***********************************/
+        // Ejercicio de el area de circulo
+        var area;
+        var r = 30;
+        var pi = 3.1416;
+        area = pi*(r**2);
+        console.log('El area es: ',area);
+
+
+        /**********************************************************/
+        // Ejerciocio promedio
+        var promedio;
+        var suma;
+        var koder_one = 154;
+        var koder_two = 160;
+        var koder_three = 172;
+        
+        suma = koder_one + koder_two + koder_three;
+        promedio = suma / 3;
+        console.log('El promedio de estatura es: ',promedio);
+
+
+        /****************************************************/
+        //Compara si el numero es menor que 10
+        var numero_usuario;
+
+        numero_usuario = 20;
+        resultado = numero_usuario <= 10; 
+        console.log(resultado);
+        
+
+
+       /*****************************************************/
+       //Compara el numero si es positivo o negativo
+       var numero_compara;
+       var resultado;
+
+       numero_compara = -4;
+       resultado = numero_compara > 0;
+       console.log(resultado);
+
+       /*****************************************************/
+       //Comparacion de numeros
+       var numero_user;
+       var respuesta;
+
+       numero_user = 80;
+       respuesta = numero_user > 10 && numero_user < 130;
+       console.log('La logica es: ',respuesta);
+       
+       /*****************************************************/
+       //Comparacion de numeros multiplos de 3
+       var first_number;
+       var second_number;
+       var result_one;
+       var result_two;
+       var result;
+
+       first_number = 9;
+       second_number = 6;
+
+
+       result_one = (first_number % 3) === 0; //logica en una linea
+    //    result_one = result_one == 0; 
+
+       result_two = (second_number % 3) === 0; 
+    //    result_two = result_two == 0; 
+
+       result = result_one && result_two;
+
+       console.log(result);
+
+    
+       
+       
+
+       
+        
+        
+    </script>
 </body>
 </html>
