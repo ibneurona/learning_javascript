@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    // Uso de if  y else
+      var numero;
+      numero = 3;
+
+      if(numero % 13 === 0){
+        console.log('El numero es multiplo de 13 ');
+      } else {
+        console.error('El numero no es multiplo');
+      }
+    </script>
+
+    <script>
+    // Uso de If Else e Ifelse
+      var numero_uno;
+      var numero_dos;
+      var numero_par;
+
+      numero_uno = 3;
+      numero_dos = 3;
+
+      numero_par = (numero_uno * numero_dos) / 2;
+
+      if( numero_par % 2 === 0){
+        console.log('El numero es par');
+      }else if (numero_par > 30 && numero_par < 50){
+        console.log('El numero es ');
+      }else {
+
+      }
+    </script>
+
+    <script>
+    // Uso de While
+    // Despleiga un numero multiplo de 3 menor que 100
+      var multiplo;
+      multiplo = 0;
+
+      while (multiplo < 100){
+        if (multiplo % 3 === 0){
+          console.log(multiplo);
+        }
+        multiplo ++;
+      }
+    </script>
+
+    <script>
+      // Uso de FOR
+      var i;
+      for (var i = 100; i >= 1; i--) {
+        console.log(i);
+      }
+    </script>
+
+    <script>
+    // Metodos
+    // devolver true or false si la palabra tiene 3 o mas voacales--
+    // Imprimir el numero de A que tiene la siguientes palabras
+    // hoooolaaa, array, amarilla, palindromo
+
+    //mayusculas y minisculas con y sin Metodos
+    var cadena = 'amarilla';
+    var j = 0;
+
+    for (var i = 0; i < cadena.length; i++) {
+
+      if (cadena[i] === 'a') {
+        j = j + 1;
+      }
+    }
+    console.log('La palabra '+ cadena + ' tiene '+ j + ' a');
+
+    </script>
+
+  </body>
+</html>
