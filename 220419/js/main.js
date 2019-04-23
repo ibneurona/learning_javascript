@@ -54,7 +54,8 @@ function Persona(nombre,aPaterno, aMaterno,fechaNacimiento,genero) {
 var persona = new Persona('Rodolfo','Olmedo','Jimenez','1986-11-14','hombre');
 console.log(persona);
 
-//DESPLIEGUE DE CURP DE EL ARREGLO PRSONA
-prsona_array.forEach(function(){
-
+//DESPLIEGUE DE CURP DE EL ARREGLO persona_array
+persona_array.forEach(function(item, index, array){
+    person = new Persona(item.nombre, item.aPaterno, item.aMaterno, item.fechaNacimiento, item.genero);
+    console.log(person.my_curp());
 });
