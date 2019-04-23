@@ -10,10 +10,10 @@
       var palindromo;
       var j = 0;
 
-      palabra = 'anita lava la tina';
+      palabra = 'Anita lava la tina';
       palindromo = [];
 
-      new_palabra = palabra.split(' ').join(''); // split me devuelve las palabras en un array y join lo concatena para tener un solo string
+      new_palabra = palabra.toLowerCase().split(' ').join(''); // split me devuelve las palabras en un array y join lo concatena para tener un solo string
 
       for (var i = (new_palabra.length - 1); i >= 0; i--) {
         palindromo[j] = new_palabra[i];
