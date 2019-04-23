@@ -8,18 +8,28 @@
     <script>
       var palabra;
       var palindromo;
-      var letra_guarda;
+      var j = 0;
 
-      palabra = 'ana';
+      palabra = 'carro';
+      palindromo = [];
 
-      for (var i = palabra.length; i >= 0; i--) {
-        letra_guarda = palabra[i - 1];
-        palindromo = letra_guarda[i];
+      for (var i = (palabra.length - 1); i >= 0; i--) {
+        palindromo[j] = palabra[i];
+        j++;
+
       }
 
-      if (palindromo === palabra) {
-        console.log('La palabra ' + palindromo + ' es un palindromo');
-      } else {
+      ////convertir el arreglo palindromo a cadena y quitar espacios
+      new_palindromo = palindromo.join('');
+
+      // palindromo.forEach(function(item){
+      //   new_palindromo = palindromo + item;
+      // })
+
+
+      if (new_palindromo === palabra) {
+        console.log('La palabra ' + new_palindromo + ' es un palindromo');
+      } else{
         console.log('No es palindromo');
       }
 
