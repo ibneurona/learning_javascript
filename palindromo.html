@@ -10,25 +10,21 @@
       var palindromo;
       var j = 0;
 
-      palabra = 'carro';
+      palabra = 'anita lava la tina';
       palindromo = [];
 
-      for (var i = (palabra.length - 1); i >= 0; i--) {
-        palindromo[j] = palabra[i];
+      new_palabra = palabra.split(' ').join(''); // split me devuelve las palabras en un array y join lo concatena para tener un solo string
+
+      for (var i = (new_palabra.length - 1); i >= 0; i--) {
+        palindromo[j] = new_palabra[i];
         j++;
 
       }
-
-      ////convertir el arreglo palindromo a cadena y quitar espacios
+      ////convierte el arreglo palindromo a cadena y quita espacios
       new_palindromo = palindromo.join('');
 
-      // palindromo.forEach(function(item){
-      //   new_palindromo = palindromo + item;
-      // })
-
-
-      if (new_palindromo === palabra) {
-        console.log('La palabra ' + new_palindromo + ' es un palindromo');
+      if (new_palindromo === new_palabra) {
+        console.log('La palabra ' + palabra + ' es un palindromo');
       } else{
         console.log('No es palindromo');
       }
