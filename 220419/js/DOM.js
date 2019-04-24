@@ -27,4 +27,4 @@ var divs = [
     },
 ]
 
-document.getElementsByTagName('div');
+document.getElementsByTagName('div')[0].style
