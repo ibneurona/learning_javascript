@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Piramide</title>
+  </head>
+  <body>
+    <script>
+      var tamanio_piramide;
+      var i = 1;
+      var char_piramide = '#';
+      var char_space = [' '];
+
+      tamanio_piramide = 7 ;
+
+      if (tamanio_piramide === 0) {
+        console.error('El tamaño de la piramide debe de ser mayor a cero');
+      } else {
+
+          while ( i <= tamanio_piramide ) {
+
+            console.log(char_space + char_piramide);
+
+            char_piramide += ' #';
+            char_space[char_piramide] = [' '];
+
+
+            i++;
+          }
+        }
+    </script>
+
+  </body>
+</html>
