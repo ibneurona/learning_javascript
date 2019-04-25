@@ -27,4 +27,9 @@ var divs = [
     },
 ]
 
-document.getElementsByTagName('div')[0].style
+//Acceso al DOM por JS forEach no es metodo de getElementsByTagName
+
+for(var i = 0; i< document.getElementsByTagName('div').length; i++){
+    document.getElementsByTagName('div')[i].style.height = divs[i].height;
+    document.getElementsByTagName('div')[i].style.backgroundColor = divs[i].backgroundColor;
+}
