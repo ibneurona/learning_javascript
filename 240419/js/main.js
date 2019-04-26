@@ -39,3 +39,9 @@ var nodeObj = {
     ]
 }
  
+var txt = document.createTextNode(nodeObj.child[0].text);
+var h2 = document.createElement(nodeObj.child[0].tag);
+h2.appendChild(txt);
+var div = document.createElement(nodeObj.tag);
+div.appendChild(h2);
+document.getElementsByTagName('body')[0].appendChild(div);
