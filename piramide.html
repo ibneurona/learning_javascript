@@ -9,7 +9,7 @@
       var tamanio_piramide;
       var i = 1;
       var char_piramide = '#';
-      var char_space = [' '];
+      var char_space = ' ';
 
       tamanio_piramide = 7 ;
 
@@ -17,16 +17,24 @@
         console.error('El tamaño de la piramide debe de ser mayor a cero');
       } else {
 
-          while ( i <= tamanio_piramide ) {
+          //while ( i <= tamanio_piramide ) {
 
-            console.log(char_space + char_piramide);
+            //console.log(char_piramide);
 
-            char_piramide += ' #';
-            char_space[char_piramide] = [' '];
-
-
-            i++;
-          }
+            // char_piramide += '#';
+            // i++;
+          //}
+          for (j = tamanio_piramide; j >= 0; j--){
+              //console.log(char_space + char_piramide);
+            char_piramide += '#';
+            
+            //console.log(char_piramide);
+            
+              //char_piramide += '#';
+              //char_space += ' ';
+              
+            }
+           // console.log(char_piramide);
         }
     </script>
 
