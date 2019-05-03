@@ -1,0 +1,18 @@
+.item{
+    list-style-type: none;
+}
+
+.item{
+    font-style: 'Arial';
+    color: green;
+}
+
+.item:hover{
+    color:white;
+    background-color: blueviolet;
+    /* box-sizing: border-box; */
+}
+
+.on{
+
+}
